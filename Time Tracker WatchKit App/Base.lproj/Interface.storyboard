@@ -1,14 +1,38 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11077"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Time_Tracker_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Today: 3h 4m" id="TVi-4j-PZr">
+                            <color key="textColor" red="1" green="0.99610400200000004" blue="0.27764320370000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <label alignment="center" verticalAlignment="center" textAlignment="center" numberOfLines="2" minimumScaleFactor="0.5" id="1QF-8d-He7">
+                            <string key="text">Today
+13H 44M</string>
+                            <fontDescription key="font" type="system" weight="semibold" pointSize="40"/>
+                        </label>
+                        <button width="0.90000000000000002" alignment="center" verticalAlignment="bottom" title="Clock-In" id="I8p-dj-Dp3">
+                            <connections>
+                                <action selector="clockInOutTapped" destination="AgC-eL-Hgc" id="qeX-sx-het"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" verticalAlignment="bottom" id="o8j-Yn-VE2">
+                            <color key="color" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </separator>
+                    </items>
+                    <connections>
+                        <outlet property="button" destination="I8p-dj-Dp3" id="spT-1t-gt8"/>
+                        <outlet property="middleLabel" destination="1QF-8d-He7" id="7bl-DL-zlJ"/>
+                        <outlet property="topLabel" destination="TVi-4j-PZr" id="Mt8-Hg-xNk"/>
+                    </connections>
+                </controller>
             </objects>
         </scene>
     </scenes>

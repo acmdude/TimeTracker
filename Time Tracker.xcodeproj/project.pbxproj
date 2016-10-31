@@ -557,6 +557,7 @@
 				179A95991DAED14A009A6748 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		179A959B1DAED14A009A6748 /* Build configuration list for PBXNativeTarget "Time Tracker WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -565,6 +566,7 @@
 				179A959D1DAED14A009A6748 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		179A959F1DAED14A009A6748 /* Build configuration list for PBXNativeTarget "Time Tracker" */ = {
 			isa = XCConfigurationList;
@@ -573,6 +575,7 @@
 				179A95A11DAED14A009A6748 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
